@@ -25,7 +25,7 @@ public class TesteCalculadora {
         System.out.println("Entrada utilizada : " + a1 + " " + op1 + " " + b1);
         System.out.println("Resultado esperado: " + esperado1);
         System.out.println("Resultado obtido  : " + obtido1);
-        System.out.println("Status            : " + (esperado1.equals(obtido1) ? "PASSOU ✓" : "FALHOU ✗"));
+        System.out.println("Status            : " + (esperado1.equals(obtido1) ? "PASSOU" : "FALHOU"));
         System.out.println();
 
         // ===== TESTE 2: SUBTRAÇÃO =====
@@ -38,7 +38,7 @@ public class TesteCalculadora {
         System.out.println("Entrada utilizada : " + a2 + " " + op2 + " " + b2);
         System.out.println("Resultado esperado: " + esperado2);
         System.out.println("Resultado obtido  : " + obtido2);
-        System.out.println("Status            : " + (esperado2.equals(obtido2) ? "PASSOU ✓" : "FALHOU ✗"));
+        System.out.println("Status            : " + (esperado2.equals(obtido2) ? "PASSOU" : "FALHOU"));
         System.out.println();
 
         // ===== TESTE 3: MULTIPLICAÇÃO =====
@@ -51,7 +51,7 @@ public class TesteCalculadora {
         System.out.println("Entrada utilizada : " + a3 + " " + op3 + " " + b3);
         System.out.println("Resultado esperado: " + esperado3);
         System.out.println("Resultado obtido  : " + obtido3);
-        System.out.println("Status            : " + (esperado3.equals(obtido3) ? "PASSOU ✓" : "FALHOU ✗"));
+        System.out.println("Status            : " + (esperado3.equals(obtido3) ? "PASSOU" : "FALHOU"));
         System.out.println();
 
         // ===== TESTE 4: DIVISÃO =====
@@ -64,7 +64,7 @@ public class TesteCalculadora {
         System.out.println("Entrada utilizada : " + a4 + " " + op4 + " " + b4);
         System.out.println("Resultado esperado: " + esperado4);
         System.out.println("Resultado obtido  : " + obtido4);
-        System.out.println("Status            : " + (esperado4.equals(obtido4) ? "PASSOU ✓" : "FALHOU ✗"));
+        System.out.println("Status            : " + (esperado4.equals(obtido4) ? "PASSOU" : "FALHOU"));
         System.out.println();
 
         // ===== TESTE 5: DIVISÃO POR ZERO =====
@@ -77,7 +77,7 @@ public class TesteCalculadora {
         System.out.println("Entrada utilizada : " + a5 + " " + op5 + " " + b5);
         System.out.println("Resultado esperado: " + esperado5);
         System.out.println("Resultado obtido  : " + obtido5);
-        System.out.println("Status            : " + (esperado5.equals(obtido5) ? "PASSOU ✓" : "FALHOU ✗"));
+        System.out.println("Status            : " + (esperado5.equals(obtido5) ? "PASSOU" : "FALHOU"));
         System.out.println();
 
         // ===== TESTE 6: OPERAÇÃO INVÁLIDA =====
@@ -90,7 +90,7 @@ public class TesteCalculadora {
         System.out.println("Entrada utilizada : " + a6 + " " + op6 + " " + b6);
         System.out.println("Resultado esperado: " + esperado6);
         System.out.println("Resultado obtido  : " + obtido6);
-        System.out.println("Status            : " + (esperado6.equals(obtido6) ? "PASSOU ✓" : "FALHOU ✗"));
+        System.out.println("Status            : " + (esperado6.equals(obtido6) ? "PASSOU" : "FALHOU"));
         System.out.println();
 
         System.out.println("========== FIM DOS TESTES ==========");
