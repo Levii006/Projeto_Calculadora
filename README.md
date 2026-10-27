@@ -67,3 +67,37 @@ Desenvolver uma calculadora em Java aplicando práticas de qualidade, testes, do
 - organizar commits e branches;
 - manter documentação técnica no README.
 
+## 5. Escopo Funcional
+
+A aplicação oferece as seguintes operações:
+
+| ID   | Funcionalidade       | Descrição                        | Status |
+|------|----------------------|----------------------------------|--------|
+| RF01 | Soma                 | Soma dois números inteiros       | ✅     |
+| RF02 | Subtração            | Subtrai dois números inteiros    | ✅     |
+| RF03 | Multiplicação        | Multiplica dois números inteiros | ✅     |
+| RF04 | Divisão              | Divide dois números inteiros     | ✅     |
+| RF05 | Validação de divisão | Impede divisão por zero          | ✅     |
+| RF06 | Operação inválida    | Trata operadores não suportados  | ✅     |
+
+## 6. Requisitos Não Funcionais
+
+| ID    | Categoria      | Requisito                                                  |
+|-------|----------------|------------------------------------------------------------|
+| RNF01 | Qualidade      | O código deve possuir organização e legibilidade           |
+| RNF02 | Testabilidade  | As operações devem possuir testes automatizados            |
+| RNF03 | Manutenção     | O código deve permitir refatoração sem alteração funcional |
+| RNF04 | Documentação   | Classes e métodos devem possuir JavaDoc                    |
+| RNF05 | Versionamento  | O projeto deve utilizar Git e GitHub                       |
+| RNF06 | Confiabilidade | Erros não devem interromper inesperadamente a execução     |
+
+## 7. Tecnologias Utilizadas
+
+| Tecnologia | Versão     | Utilização                  |
+|------------|------------|-----------------------------|
+| Java       | 17+        | Desenvolvimento             |
+| JDK        | 17+        | Compilação                  |
+| Git        | —          | Controle de versão          |
+| GitHub     | —          | Repositório remoto          |
+| JavaDoc    | —          | Documentação                |
+| IDE        | VS Code    | Ambiente de desenvolvimento |
