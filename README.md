@@ -11,7 +11,7 @@ Projeto acadêmico desenvolvido com foco em Qualidade de Software, Testes, Refat
 | **Aluno**          | Levi da Silva Vitorio                 |
 | **RA**             | 252190                                |
 | **Curso**          | Análise e Desenvolvimento de Sistemas |
-| **Disciplina**     | UX e UX Testes de Software            |
+| **Disciplina**     | UX e UI Testes de Software            |
 | **Professor**      | Daniel Ohata                          |
 | **Semestre**       | 2026.2                                |
 
@@ -101,3 +101,128 @@ A aplicação oferece as seguintes operações:
 | GitHub     | —          | Repositório remoto          |
 | JavaDoc    | —          | Documentação                |
 | IDE        | VS Code    | Ambiente de desenvolvimento |
+
+## 8. Testes Realizados
+# | Primeiro Teste |
+========== TESTES DA CALCULADORA ==========
+
+--- Teste de Soma ---
+Entrada utilizada : 10 + 5
+Resultado esperado: 15
+Resultado obtido  : 15
+Status            : PASSOU ?
+
+--- Teste de Subtração ---
+Entrada utilizada : 10 - 5
+Resultado esperado: 5
+Resultado obtido  : 5
+Status            : PASSOU ?
+
+--- Teste de Multiplicação ---
+Entrada utilizada : 10 * 5
+Resultado esperado: 50
+Resultado obtido  : 50
+Status            : PASSOU ?
+
+--- Teste de Divisão ---
+Entrada utilizada : 10 / 5
+Resultado esperado: 2.0
+Resultado obtido  : 2.0
+Status            : PASSOU ?
+
+--- Teste de Divisão por Zero ---
+Entrada utilizada : 10 / 0
+Resultado esperado: Erro: divisão por zero não é permitida!
+Resultado obtido  : Erro: divisão por zero não é permitida!
+Status            : PASSOU ?
+
+--- Teste de Operação Inválida ---
+Entrada utilizada : 10 % 5
+Resultado esperado: Erro: operação inválida!
+Resultado obtido  : Erro: operação inválida!
+Status            : PASSOU ?
+
+========== FIM DOS TESTES ==========
+
+# | Teste da Refatoração |
+========== TESTES DA CALCULADORA ==========
+
+--- Teste de Soma ---
+Entrada utilizada : 10 + 5
+Resultado esperado: 15
+Resultado obtido  : 15
+Status            : PASSOU
+
+--- Teste de Subtração ---
+Entrada utilizada : 10 - 5
+Resultado esperado: 5
+Resultado obtido  : 5
+Status            : PASSOU
+
+--- Teste de Multiplicação ---
+Entrada utilizada : 10 * 5
+Resultado esperado: 50
+Resultado obtido  : 50
+Status            : PASSOU
+
+--- Teste de Divisão ---
+Entrada utilizada : 10 / 5
+Resultado esperado: 2.0
+Resultado obtido  : 2.0
+Status            : PASSOU
+
+--- Teste de Divisão por Zero ---
+Entrada utilizada : 10 / 0
+Resultado esperado: Erro: divisão por zero não é permitida!
+Resultado obtido  : Erro: divisão por zero não é permitida!
+Status            : PASSOU
+
+--- Teste de Operação Inválida ---
+Entrada utilizada : 10 % 5
+Resultado esperado: Erro: operação inválida!
+Resultado obtido  : Erro: operação inválida!
+Status            : PASSOU
+
+========== FIM DOS TESTES ==========
+
+# | Teste Após Refatoração |
+
+========== TESTES DA CALCULADORA ==========
+
+--- Teste de Soma ---
+Entrada utilizada : 10 + 5
+Resultado esperado: 15
+Resultado obtido  : 15
+Status            : PASSOU
+
+--- Teste de Subtração ---
+Entrada utilizada : 10 - 5
+Resultado esperado: 5
+Resultado obtido  : 5
+Status            : PASSOU
+
+--- Teste de Multiplicação ---
+Entrada utilizada : 10 * 5
+Resultado esperado: 50
+Resultado obtido  : 50
+Status            : PASSOU
+
+--- Teste de Divisão ---
+Entrada utilizada : 10 / 5
+Resultado esperado: 2.0
+Resultado obtido  : 2.0
+Status            : PASSOU
+
+--- Teste de Divisão por Zero ---
+Entrada utilizada : 10 / 0
+Resultado esperado: Erro: divisão por zero não é permitida!
+Resultado obtido  : Erro: divisão por zero não é permitida!
+Status            : PASSOU
+
+--- Teste de Operação Inválida ---
+Entrada utilizada : 10 % 5
+Resultado esperado: Erro: operação inválida!
+Resultado obtido  : Erro: operação inválida!
+Status            : PASSOU
+
+========== FIM DOS TESTES ==========

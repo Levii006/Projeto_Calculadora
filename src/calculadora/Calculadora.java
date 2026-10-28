@@ -5,92 +5,45 @@ package calculadora;
  * Utilizada no módulo de cálculos do aplicativo FinançApp.
  *
  * @author Levi da Silva Vitorio RA: 252190
- * @version 1.1
+ * @version 1.0
  */
 public class Calculadora {
-
-    private static final String ERRO_OPERACAO_INVALIDA = "Erro: operação inválida!";
-    private static final String ERRO_DIVISAO_POR_ZERO = "Erro: divisão por zero não é permitida!";
 
     /**
      * Realiza uma operação matemática entre dois números inteiros.
      *
-     * @param primeiroOperando  primeiro número da operação
-     * @param segundoOperando   segundo número da operação
-     * @param operador          operação a ser realizada (+, -, *, /)
+     * @param a  primeiro operando
+     * @param b  segundo operando
+     * @param op operação a ser realizada (+, -, *, /)
      * @return resultado da operação como String (ou mensagem de erro)
      */
-    public String calc(int primeiroOperando, int segundoOperando, String operador) {
+    public String calc(int a, int b, String op) {
 
-        if (operacaoInvalida(operador)) {
-            return ERRO_OPERACAO_INVALIDA;
+        // Verifica se a operação é nula ou vazia
+        if (op == null || op.trim().isEmpty()) {
+            return "Erro: operação inválida!";
         }
 
-        return executarOperacao(primeiroOperando, segundoOperando, operador.trim());
-    }
-
-    /**
-     * Verifica se o operador informado é nulo, vazio ou inválido.
-     *
-     * @param operador operador a ser validado
-     * @return true se a operação for inválida
-     */
-    private boolean operacaoInvalida(String operador) {
-        return operador == null || operador.trim().isEmpty();
-    }
-
-    /**
-     * Executa a operação matemática de acordo com o operador informado.
-     *
-     * @param primeiroOperando  primeiro número
-     * @param segundoOperando   segundo número
-     * @param operador          operador já validado e sem espaços
-     * @return resultado da operação ou mensagem de erro
-     */
-    private String executarOperacao(int primeiroOperando, int segundoOperando, String operador) {
-
-        switch (operador) {
+        switch (op) {
             case "+":
-                return somar(primeiroOperando, segundoOperando);
+                return String.valueOf(a + b);
+
             case "-":
-                return subtrair(primeiroOperando, segundoOperando);
+                return String.valueOf(a - b);
+
             case "*":
-                return multiplicar(primeiroOperando, segundoOperando);
+                return String.valueOf(a * b);
+
             case "/":
-                return dividir(primeiroOperando, segundoOperando);
+                // Impede divisão por zero
+                if (b == 0) {
+                    return "Erro: divisão por zero não é permitida!";
+                }
+                // Retorna com casas decimais
+                return String.valueOf((double) a / b);
+
             default:
-                return ERRO_OPERACAO_INVALIDA;
+                return "Erro: operação inválida!";
         }
-    }
-
-    /**
-     * Realiza a soma de dois números.
-     */
-    private String somar(int a, int b) {
-        return String.valueOf(a + b);
-    }
-
-    /**
-     * Realiza a subtração de dois números.
-     */
-    private String subtrair(int a, int b) {
-        return String.valueOf(a - b);
-    }
-
-    /**
-     * Realiza a multiplicação de dois números.
-     */
-    private String multiplicar(int a, int b) {
-        return String.valueOf(a * b);
-    }
-
-    /**
-     * Realiza a divisão de dois números, tratando divisão por zero.
-     */
-    private String dividir(int a, int b) {
-        if (b == 0) {
-            return ERRO_DIVISAO_POR_ZERO;
-        }
-        return String.valueOf((double) a / b);
     }
 }
